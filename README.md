@@ -5,7 +5,7 @@ Con-Gen 2020. Eric C. Anderson’s resources
 
 The presentation follows the narrative in the following html document:
 
-  - <https://github.com/eriqande/con-gen-2020/bayes-mcmc-gtyperr-narrative.nb.html>
+  - <https://eriqande.github.io/con-gen-2020/bayes-mcmc-gtyperr-narrative.nb.html>
 
 Within that notebook are links to the Shiny Apps I have written to play
 with genotype likelihoods (as well as directions on how to use them). If
