@@ -3,4 +3,23 @@ Con-Gen 2020. Eric C. Anderson’s resources
 
 ## Tuesday, September 8, 2020
 
-The
+The presentation follows the narrative in the following html document:
+
+  - <https://github.com/eriqande/con-gen-2020/bayes-mcmc-gtyperr-narrative.nb.html>
+
+Within that notebook are links to the Shiny Apps I have written to play
+with genotype likelihoods (as well as directions on how to use them). If
+you want to get the associated R project, you can download it from Box
+at:
+
+  - <https://umt.box.com/s/jdsq97eg2tsse3mw4ig5f3h2ynmdhg74>
+
+or get it directly from GitHub:
+
+  - <https://github.com/eriqande/ngs-genotype-models>
+
+And, *only as a last resort*, if you can’t get the Shiny Apps working in
+RStudio on your computer, you can visit their pages on `shinyapps.io`:
+
+  - <https://eriqande.shinyapps.io/ngs-genotype-models/001-allele-freq-estimation.Rmd>
+  - <https://eriqande.shinyapps.io/ngs-genotype-models/002-genotype-likelihoods-from-reads.Rmd>
