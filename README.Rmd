@@ -1,0 +1,18 @@
+---
+title: "Con-Gen 2020.  Eric C. Anderson's resources"
+output: 
+  html_document:
+    toc: false
+  github_document:
+    toc: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+
+## Tuesday, September 8, 2020
+
+The presentation follows the narrative in the following
