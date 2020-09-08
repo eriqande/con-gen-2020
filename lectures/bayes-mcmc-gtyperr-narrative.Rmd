@@ -521,7 +521,7 @@ Often you will want to summarise the posterior distribution.
 1. The posterior mean.  Gives a point estimate that minimizes squared error posterior loss.
 2. The posterior median.  Gives a point estimate that minimizes absolute posterior loss.
 3. The posterior mode. Gives a point estimate that minimizes 0-1 posterior loss.
-4. The Bayesian Credible Interval: provides an interval estimator. Like a confidence interval, but infinitely easier to intepret correctly...
+4. The Bayesian Credible Interval: provides an interval estimator. Like a confidence interval, but infinitely easier to interpret correctly...
 
 
 
@@ -677,6 +677,7 @@ $$
 An easier way to see this might be a picture:
 
 ![](figures/genotypes_and_reads.svg)
+
 _Genotype likelihoods_ are measures of how much support the _read_ data gives
 to the three possible genotypes ($CC$, $CT$, or $TT$, in this case).
 
@@ -714,14 +715,14 @@ random value, let us call that value $p_C^{(0)}$.
 
 Now, if we know the value of $p_C$, then the only thing that would be left unknown in the model
 would be the genotypes of the individuals.  But looking at the graph it is clear that they 
-are all conditionally indendent given $p_C^{(0)}$ and the the observed read depths.  So, 
-pretending that $p_C^{(0)}$ is the truth, we could compute, for each individual $i, the 
+are all conditionally indendent given $p_C^{(0)}$ and the observed read depths.  So, 
+pretending that $p_C^{(0)}$ is the truth, we could compute, for each individual $i$, the 
 posterior probabilities of $i$'s genotype (the three cases, 1--3 above). (By the way, this 
 distribution is often called the "full conditional distribution").  
 
 Then we would simulate values of the genotypes from those posterior distributions.  Aha!
 once we have those simulated, we can pretend that they are real and use them to 
-come up with a new estimate of $p_C$ by compute the posterior distribution (full conditional)
+come up with a new estimate of $p_C$ by computing the posterior distribution (full conditional)
 for $p_C$ given the current values of the genotypes and then simulating a value from
 that distribution.  Call that $p_C^{(1)}$, and then go back to simulating new values for the
 genotypes.  
@@ -830,6 +831,8 @@ MCMC.
 2. What does it take for the likelihood to be highest for the heterozygote hypothesis?
 3. Is it more likely that a true heterozygote genotype will have a posterior probability that is highest for the hyothesis of "common homozygote" or the hypotheses of "rare homozygote."
 4. How does the posterior distribution of the allele frequency computed from read data (the transparent blue histogram) compare to the posterior distribution if you know the genotypes exactly (the black line)?  How does this change when read depth is increased or decreased?
+5. If you only have a single read from a heterozygous individual, will that individual's maximum likelihood genotype ever be "heterozygote."  What about its maximum _a-posteriori_ genotype? What are the conditions that lead to the heterozygous individual with only a single read having a high posterior probability of being a heterozygote?
+6. When read depths are low, even if you are calling genotypes using the highest posterior probability, do you expect the results to be very accurate?
 
 
 
@@ -1075,6 +1078,27 @@ This depends on what question you are addressing:
 
 
 ## Hands-on practical with `whoa`
+
+1. Log on to the RStudio server.
+2. At the R console do:
+
+```r
+library(whoa)
+```
+
+- Then, in the RStudio Help panel (lower right), type `whoa` in the text search box and hit return.
+- Click the "Index" link at the bottom of the result.
+- The click the "User guides, package vignettes,..." link.
+- Choose the whoa tutorial and run through it.
+
+### Further whoa fun
+
+In the RStudio terminal from your home directory, do this:
+
+```
+cp -r instructor_materials/Eric_Anderson/whoa-practical-session ./
+```
+Then open the RStudio project inside there and follow the directions in: `001-whoa-first-steps.Rmd`.
 
 
 
