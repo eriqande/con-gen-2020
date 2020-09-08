@@ -469,7 +469,7 @@ and then compute the posterior distribution, whilst fiddling with the prior para
 if desired.
 
 The one downside of Shiny apps is that they don't run properly on the RStudio Server that has
-been set up for ConGen.  Nor will it run properly in the Remote Desktop version of the same.
+been set up for ConGen.  Nor will they run properly in the Remote Desktop version of the same.
 
 But this is not a huge issue, since you should be able to run it on your own computer
 with RStudio.  The procedure for that is:
@@ -826,10 +826,10 @@ MCMC.
 
 ### Back to breakout rooms...some questions:
 
-1.
-2. 
-3.
-4. 
+1. What are the likelihoods for the three different possible genotypes when the read depth is 0 for an individual?
+2. What does it take for the likelihood to be highest for the heterozygote hypothesis?
+3. Is it more likely that a true heterozygote genotype will have a posterior probability that is highest for the hyothesis of "common homozygote" or the hypotheses of "rare homozygote."
+4. How does the posterior distribution of the allele frequency computed from read data (the transparent blue histogram) compare to the posterior distribution if you know the genotypes exactly (the black line)?  How does this change when read depth is increased or decreased?
 
 
 
@@ -1061,6 +1061,15 @@ If the heterozygote miscall rate is low, it means that _on average_ you have the
 number of heterozygotes and homozygotes in a data set (or, perhaps far too many heterozygotes).
 
 However, the genotyping accuracy might be quite low.  
+
+### How much of a problem is it if your heterozygotes are often called as homozygotes?
+
+This depends on what question you are addressing:
+
+* _Allele frequency estimation_: not too much of a problem, but it could (proportionally) elevate the frequency of the rare allele a bit more.
+* _Relationship inference_: absolutely disastrous.  Any time you are comparing genotypes between individuals to estimate relationships, genotyping error can have a big impact and must be accounted for.
+* _Identification of $F_\mathrm{ST}$ outliers_: potentially problematic.
+* etc.
 
 ### If inference can be made without calling genotypes, that is often quite useful for low-read depth sampling.
 
