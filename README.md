@@ -73,3 +73,46 @@ are useful. I will talk about our use of microhaplotypes, following
 these slides:
 
   - <https://eriqande.github.io/con-gen-2020/microhaps.pdf>
+
+#### Hands-on practical with microhaplot
+
+This can be run from using the ConGen 2020 remote desktop servers:
+
+  - Log in to the remote desktop using Microsoft Remote Desktop.
+  - Open the Terminal Emulator app (black square app in the dock at
+    bottom of screen).
+  - Type `R` into the terminal and hit return (this starts an R
+    session).
+  - Within R, type these lines:
+
+<!-- end list -->
+
+``` r
+library(microhaplot)
+mvShinyHaplot("~/Shiny")
+vignette("microhaplot-walkthrough")
+```
+
+The final line there should open a package vignette in a Firefox tab.
+This vignette provides instructions for the hands-on session. \* Note
+that the vignette is not well rendered in Firefox on the Remote Desktop.
+You can get a better looking version straight from CRAN on your own
+Desktop:
+<https://cran.r-project.org/web/packages/microhaplot/vignettes/microhaplot-walkthrough.html>
+
+  - Launch the microhaplot Shiny app by issuing this command in R:
+
+<!-- end list -->
+
+``` r
+runShinyHaplot("~/Shiny/microhaplot")
+```
+
+That will open a FireFox tab with the Shiny App. \* From the dropdown
+box, choose the `fish2.rds` data set.
+
+Now, you can go through the vignette, starting from **“About the Example
+Data”**. This section provides a lot of description about the different
+panels/views of the microhaplotype data that are available. If you want
+to just get going and start clicking on stuff, you might try proceeding
+to the section **Mission one: An overview of loci in the vignette**.
