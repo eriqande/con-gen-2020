@@ -130,7 +130,7 @@ UCSC Rockfish Project:
 \item Kelp-rockfish recruitment project
 \item Next-generation sequencing and microhaplotypes
 \item Confirmation of our data quality
-\item Preliminary relationship inference work
+\item Relationship inference in rockfish
 \end{enumerate}
 
 \end{frame}
@@ -328,44 +328,6 @@ $\bullet$ and species ID in juveniles is unreliable
 
 
 
-\begin{frame}{Next Generation Sequencing -- I}
-\framesubtitle{Illumina Sequencing By Synthesis}
-{\centering
-\includegraphics[height=0.80\textheight]{mhap_figs/illumina_fig.png}
-}\\
-{\tiny http://www.intechopen.com}
-\end{frame}
-
-
-
-
-
-
-
-\begin{frame}{Next Generation Sequencing -- II}
-\framesubtitle{{\em de novo} ``genome'' assembly}
-{\centering
-\includegraphics[height=0.75\textheight]{mhap_figs/assembly.png}
-}\\
-{\tiny http://www.cs.hku.hk}
-\end{frame}
-
-
-
-
-
-
-\begin{frame}{Next Generation Sequencing -- III}
-\framesubtitle{Alignment of sequencing reads to ``genome'' allows \\
-identification of polymorphisms and genotyping}
-{\centering
-\includegraphics[width=0.95\textwidth]{mhap_figs/alignment.png}
-}\\
-{\tiny http://www.historyofnimr.org.uk}
-\end{frame}
-
-
-
 
 
 
@@ -559,7 +521,7 @@ can yield useful data for non-target species.
 \item Distortions from Hardy-Weinberg Proportions
 \item Regenotype Discordance Rate
 \end{itemize}
-\item Preliminary Results from Relationship Inference
+\item Results from Relationship Inference
 \end{itemize}
 \end{frame}
 
@@ -680,6 +642,27 @@ $\bullet$ From 75 kelp rockfish genotyped twice, the per-locus discordance rate 
 
 
 
+\begin{frame}{Relationship Inference in Baetscher et al. (2019)}
+\begin{columns}
+\begin{column}{0.5\textwidth}
+\begin{itemize}
+{\small
+\item Kelp Rockfish: 1,912 Adults and 4,250 juveniles ($\approx 8.1$~million pairs)
+\item 8 parent offspring pairs, showing evidence of dispersal between MPAs and from MPAs to unregulated zones.
+\item 25 pairs of full-siblings identified. Including 2 from different years.
+}
+\end{itemize}
+\end{column}
+\begin{column}{0.5\textwidth}
+\includegraphics[width = 1.0\textwidth]{images/rockfish-distros.pdf}
+\end{column}
+\end{columns}
+
+\end{frame}
+
+
+
+
 
 \begin{frame}{The Prospects for Half-Sibling Identification}
 \begin{center}
@@ -720,11 +703,10 @@ on the same read are the ``microhaplotypes.''
 \item Visualize, filter, interpret, and output data while using {\tt microhaplot}
 \begin{itemize}
 \item This is what we will do together today (we won't work so much with the previous bioinformatics steps,
-but, rather, we just want to familiarize people with the {\tt microhaplot} interface.  
-\item Talk to me or Thomas about getting your own data into {\tt microhaplot}.
+but, rather, we just want to familiarize people with the {\tt microhaplot} interface.) 
 \end{itemize}
 
-\item Goto: {\tt https://github.com/ngthomas/microhaplot}
+\item This will not run on the ConGen RStudio Server, but it is all configured to run on the Remote Desktop.  Full directions back at \url{https://eriqande.github.io/con-gen-2020/}
 
 \end{itemize}
 

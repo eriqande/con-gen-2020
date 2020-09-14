@@ -1043,6 +1043,18 @@ And if we look at the results for lobster we see:
 This suggests that it has to do with the genotype calling itself.
 
 
+### Loci on the boundaries --- these are likely paralogous loci
+
+![](figures/whoa-wifl-fixed-paralogs.svg)
+
+![](figures/whoa-wifl-fixed-paralogs-fixed-alt.svg)
+![](figures/whoa-wifl-fixed-paralogs-fixed-ref.svg)
+
+Note that the presence of such loci will artificially drive the
+estimated heterozygote miscall rate _down_.
+
+
+
 
 ### Going forward from here
 
@@ -1100,7 +1112,8 @@ cp -r instructor_materials/Eric_Anderson/whoa-practical-session ./
 ```
 Then open the RStudio project inside there and follow the directions in: `001-whoa-first-steps.Rmd`.
 
-
+If you have your own data in a VCF file, this shows how to read data
+in from a VCF file and use it in a `whoa` analysis.
 
 
 ## Wrap Up
