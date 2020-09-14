@@ -116,3 +116,8 @@ Data”**. This section provides a lot of description about the different
 panels/views of the microhaplotype data that are available. If you want
 to just get going and start clicking on stuff, you might try proceeding
 to the section **Mission one: An overview of loci in the vignette**.
+
+#### Getting microhaplot on your own computer
+
+To do this, go to <https://github.com/ngthomas/microhaplot> and follow
+the installation instructions.
